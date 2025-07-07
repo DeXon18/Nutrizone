@@ -1,8 +1,8 @@
 # Nutrizone 🍏
 
-![Nutrizone Banner](https://via.placeholder.com/1200x400/2D3748/FFFFFF?text=Nutrizone) _(Reemplazar con imagen real del proyecto)_
+![Nutrizone Banner](https://i.imgur.com/bDpHj2C.png)
 
-**Planificación nutricional inteligente y personalizada**  
+**Planificación nutricional inteligente y personalizada**
 _Aplicación web para gestión de alimentación, cálculo de macros y seguimiento de progreso_
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
