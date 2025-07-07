@@ -1,45 +1,46 @@
-# Nutrizone ???  
-PlanificaciÛn nutricional inteligente y personalizada
+# Nutrizone üçΩÔ∏è
 
-> ?? **Nota:** Este proyecto fue anteriormente conocido como **NutriPlan**. Ahora se desarrolla bajo el nombre **Nutrizone** con nuevas funcionalidades y enfoque mejorado.
+Planificaci√≥n nutricional inteligente y personalizada
 
-## ?? DescripciÛn
+> ‚ö†Ô∏è **Nota:** Este proyecto fue anteriormente conocido como **NutriPlan**. Ahora se desarrolla bajo el nombre **Nutrizone** con nuevas funcionalidades y enfoque mejorado.
 
-**Nutrizone** es una aplicaciÛn web diseÒada para ayudar a los usuarios a planificar su alimentaciÛn, calcular sus necesidades calÛricas y macronutrientes, crear recetas personalizadas y seguir su progreso semanal de forma intuitiva y segura.
+## üìå Descripci√≥n
 
-Ideal tanto para uso personal como profesional, Nutrizone combina herramientas avanzadas de c·lculo nutricional con una interfaz limpia y accesible.
+**Nutrizone** es una aplicaci√≥n web dise√±ada para ayudar a los usuarios a planificar su alimentaci√≥n, calcular sus necesidades cal√≥ricas y macronutrientes, crear recetas personalizadas y seguir su progreso semanal de forma intuitiva y segura.
 
----
-
-## ?? CaracterÌsticas Principales
-
-- ? C·lculo autom·tico de Gasto EnergÈtico Basal (GEB) usando la fÛrmula de Mifflin-St Jeor.
-- ? Perfil de usuario configurable: edad, peso, altura, nivel de actividad y objetivo.
-- ? Base de datos integrada de alimentos (importados desde USDA FoodData Central).
-- ? GestiÛn de alergias e intolerancias alimentarias *(NUEVO)*.
-- ? Editor de recetas con c·lculo autom·tico de macros por porciÛn.
-- ? Planificador semanal interactivo con arrastrar y soltar (drag-and-drop).
-- ? Registro de mÈtricas corporales y gr·ficos din·micos (con Chart.js).
-- ? GalerÌa privada de fotos de progreso con acceso restringido.
-- ? Listas de compra autom·ticas *(NUEVO)*.
-- ? Modo oscuro / tema visual alternativo *(NUEVO)*.
+Ideal tanto para uso personal como profesional, Nutrizone combina herramientas avanzadas de c√°lculo nutricional con una interfaz limpia y accesible.
 
 ---
 
-## ?? TecnologÌa Usada
+## üîß Caracter√≠sticas Principales
 
-| Capa        | TecnologÌa                   |
-|------------|------------------------------|
-| Backend    | Laravel 10, PHP 8.3          |
-| Base de Datos | PostgreSQL 16              |
-| Frontend   | Vue.js, Tailwind CSS         |
-| Servidor   | Nginx                        |
-| Entorno    | Ubuntu Server 24.04 (LXC en Proxmox) |
-| Control de versiones | Git + GitHub      |
+- ‚úÖ C√°lculo autom√°tico de Gasto Energ√©tico Basal (GEB) usando la f√≥rmula de Mifflin-St Jeor.
+- ‚úÖ Perfil de usuario configurable: edad, peso, altura, nivel de actividad y objetivo.
+- ‚úÖ Base de datos integrada de alimentos (importados desde USDA FoodData Central).
+- ‚úÖ Gesti√≥n de alergias e intolerancias alimentarias _(NUEVO)_.
+- ‚úÖ Editor de recetas con c√°lculo autom√°tico de macros por porci√≥n.
+- ‚úÖ Planificador semanal interactivo con arrastrar y soltar (drag-and-drop).
+- ‚úÖ Registro de m√©tricas corporales y gr√°ficos din√°micos (con Chart.js).
+- ‚úÖ Galer√≠a privada de fotos de progreso con acceso restringido.
+- ‚úÖ Listas de compra autom√°ticas _(NUEVO)_.
+- ‚úÖ Modo oscuro / tema visual alternativo _(NUEVO)_.
 
 ---
 
-## ??? Requisitos del Sistema
+## üß∞ Tecnolog√≠a Usada
+
+| Capa                 | Tecnolog√≠a                           |
+| -------------------- | ------------------------------------ |
+| Backend              | Laravel 10, PHP 8.3                  |
+| Base de Datos        | PostgreSQL 16                        |
+| Frontend             | Vue.js, Tailwind CSS                 |
+| Servidor             | Nginx                                |
+| Entorno              | Ubuntu Server 24.04 (LXC en Proxmox) |
+| Control de versiones | Git + GitHub                         |
+
+---
+
+## üõ†Ô∏è Requisitos del Sistema
 
 - Ubuntu Server 24.04 LTS
 - PHP 8.3
