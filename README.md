@@ -1,53 +1,133 @@
-# Nutrizone 🍽️
+# Nutrizone 🍏
 
-Planificación nutricional inteligente y personalizada
+![Nutrizone Banner](https://via.placeholder.com/1200x400/2D3748/FFFFFF?text=Nutrizone) _(Reemplazar con imagen real del proyecto)_
 
-> ⚠️ **Nota:** Este proyecto fue anteriormente conocido como **NutriPlan**. Ahora se desarrolla bajo el nombre **Nutrizone** con nuevas funcionalidades y enfoque mejorado.
+**Planificación nutricional inteligente y personalizada**  
+_Aplicación web para gestión de alimentación, cálculo de macros y seguimiento de progreso_
 
-## 📌 Descripción
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Laravel](https://img.shields.io/badge/Laravel-10.x-red.svg)
+![Vue.js](https://img.shields.io/badge/Vue.js-3.x-green.svg)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue.svg)
 
-**Nutrizone** es una aplicación web diseñada para ayudar a los usuarios a planificar su alimentación, calcular sus necesidades calóricas y macronutrientes, crear recetas personalizadas y seguir su progreso semanal de forma intuitiva y segura.
-
-Ideal tanto para uso personal como profesional, Nutrizone combina herramientas avanzadas de cálculo nutricional con una interfaz limpia y accesible.
-
----
-
-## 🔧 Características Principales
-
-- ✅ Cálculo automático de Gasto Energético Basal (GEB) usando la fórmula de Mifflin-St Jeor.
-- ✅ Perfil de usuario configurable: edad, peso, altura, nivel de actividad y objetivo.
-- ✅ Base de datos integrada de alimentos (importados desde USDA FoodData Central).
-- ✅ Gestión de alergias e intolerancias alimentarias _(NUEVO)_.
-- ✅ Editor de recetas con cálculo automático de macros por porción.
-- ✅ Planificador semanal interactivo con arrastrar y soltar (drag-and-drop).
-- ✅ Registro de métricas corporales y gráficos dinámicos (con Chart.js).
-- ✅ Galería privada de fotos de progreso con acceso restringido.
-- ✅ Listas de compra automáticas _(NUEVO)_.
-- ✅ Modo oscuro / tema visual alternativo _(NUEVO)_.
+> ⚠️ **Nota:** Este proyecto fue anteriormente conocido como **NutriPlan**. Ahora evoluciona como **Nutrizone** con arquitectura mejorada y nuevas funcionalidades.
 
 ---
 
-## 🧰 Tecnología Usada
+## 🌟 Visión
 
-| Capa                 | Tecnología                           |
-| -------------------- | ------------------------------------ |
-| Backend              | Laravel 10, PHP 8.3                  |
-| Base de Datos        | PostgreSQL 16                        |
-| Frontend             | Vue.js, Tailwind CSS                 |
-| Servidor             | Nginx                                |
-| Entorno              | Ubuntu Server 24.04 (LXC en Proxmox) |
-| Control de versiones | Git + GitHub                         |
+Convertirnos en la plataforma de referencia para la planificación nutricional personalizada en español e inglés, combinando herramientas profesionales con una experiencia de usuario intuitiva.
 
 ---
 
-## 🛠️ Requisitos del Sistema
+## 🚀 Características Principales
 
-- Ubuntu Server 24.04 LTS
-- PHP 8.3
+### 📊 Perfil Inteligente
+
+- Cálculo automático de necesidades calóricas (fórmula Mifflin-St Jeor)
+- Gestión de alergias/intolerancias alimentarias
+- Ajuste dinámico basado en métricas corporales
+
+### 🍎 Base de Conocimiento
+
+- +8,000 alimentos de USDA FoodData Central
+- Búsqueda avanzada con filtros (sin gluten, vegano, etc.)
+- Detalles nutricionales por 100g
+
+### 👨‍🍳 Gestor de Recetas
+
+- Editor interactivo con cálculo automático de macros
+- Sistema de valoración y comentarios
+- Modo público/privado para compartir
+
+### 📅 Planificador Semanal
+
+- Interfaz drag-and-drop para comidas
+- Resumen diario de macros vs objetivos
+- Generación automática de listas de compra
+
+### 📈 Seguimiento
+
+- Registro de métricas corporales con gráficos
+- Galería privada de fotos de progreso
+- Recordatorios personalizados
+
+---
+
+## 🛠 Stack Tecnológico
+
+| Capa              | Tecnologías                                       |
+| ----------------- | ------------------------------------------------- |
+| **Backend**       | Laravel 10, PHP 8.3                               |
+| **Frontend**      | Vue.js 3, Tailwind CSS, Chart.js                  |
+| **Base de Datos** | PostgreSQL 16 (Modelo relacional optimizado)      |
+| **Servidor**      | Nginx + PHP-FPM (Ubuntu 24.04 LTS en LXC/Proxmox) |
+| **DevOps**        | Git + GitHub, Composer, npm                       |
+
+---
+
+## 📦 Instalación
+
+### Requisitos previos
+
+- PHP 8.3+
 - PostgreSQL 16
-- Composer
-- Node.js & npm
-- Git
-- Nginx
+- Composer 2.5+
+- Node.js 18+
 
----
+### Pasos
+
+```bash
+# Clonar repositorio
+git clone https://github.com/DeXon18/Nutrizone.git
+cd Nutrizone
+
+# Instalar dependencias
+composer install
+npm install
+
+# Configurar entorno (copiar .env.example)
+cp .env.example .env
+nano .env  # Configurar DB y otras variables
+
+# Migrar base de datos
+php artisan migrate --seed
+
+# Compilar assets
+npm run build
+
+# Iniciar servidor de desarrollo
+php artisan serve
+```
+
+## 📂 Estructura del Proyecto
+
+```plaintext
+nutrizone/
+├── app/                 # Lógica de backend
+│   ├── Models/          # User.php, Food.php, Recipe.php
+│   ├── Calculators/     # NutritionCalculator.php
+│   └── Http/            # Controllers, Middleware
+├── config/              # Configuraciones Laravel
+├── database/
+│   ├── migrations/      # Esquemas de base de datos
+│   └── seeders/         # Datos iniciales (USDA Foods)
+├── public/              # Assets compilados
+├── resources/
+│   ├── js/              # Componentes Vue
+│   │   └── Calculator/  # Componentes de cálculo
+│   ├── lang/            # Traducciones (es/en)
+│   └── views/           # Blade templates
+├── routes/
+│   ├── api.php          # Endpoints API
+│   └── web.php          # Rutas principales
+└── storage/
+    └── app/
+        └── progress_photos/  # Fotos de usuarios (privado)
+```
+
+**Key Paths:**
+
+- `app/Calculators/NutritionCalculator.php` - Lógica de fórmulas nutricionales
+- `database/seeders/FoodSeeder.php` - Importación de datos USDA
+- `resources/js/components/Planner.vue` - Planificador drag-and-drop
