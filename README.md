@@ -10,8 +10,6 @@ _Aplicación web para gestión de alimentación, cálculo de macros y seguimient
 ![Vue.js](https://img.shields.io/badge/Vue.js-3.x-green.svg)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue.svg)
 
-> ⚠️ **Nota:** Este proyecto fue anteriormente conocido como **NutriPlan**. Ahora evoluciona como **Nutrizone** con arquitectura mejorada y nuevas funcionalidades.
-
 ---
 
 ## 🌟 Visión
