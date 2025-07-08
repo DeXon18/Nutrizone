@@ -6,7 +6,7 @@
 _Aplicación web para gestión de alimentación, cálculo de macros y seguimiento de progreso_
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Laravel](https://img.shields.io/badge/Laravel-10.x-red.svg)
+![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)
 ![Vue.js](https://img.shields.io/badge/Vue.js-3.x-green.svg)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue.svg)
 
@@ -98,8 +98,9 @@ npm run build
 php artisan serve
 ```
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto 
 
+ejemplo
 ```plaintext
 nutrizone/
 ├── app/                 # Lógica de backend
