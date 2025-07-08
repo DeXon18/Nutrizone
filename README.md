@@ -1,9 +1,7 @@
 # Nutrizone 🍏
 
-![Nutrizone Banner](https://i.imgur.com/bDpHj2C.png)
-
 **Planificación nutricional inteligente y personalizada**
-_Aplicación web para gestión de alimentación, cálculo de macros y seguimiento de progreso_
+_Aplicación web para gestión de alimentación, cálculo de macros y seguimiento de progreso._
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)
@@ -18,37 +16,80 @@ Convertirnos en la plataforma de referencia para la planificación nutricional p
 
 ---
 
-## 🚀 Características Principales
+## состояние проекта (Estado del Proyecto)
+
+**Última actualización: 8 de Julio de 2024**
+
+El proyecto ha completado su fase de cimentación (Fase 0) y las tareas fundamentales de la Fase 1. La aplicación cuenta con una base funcional que incluye un sistema de autenticación seguro y un perfil de usuario extendido, todo servido sobre HTTPS.
+
+---
+
+## 🗺️ Hoja de Ruta (Roadmap) y Progreso
+
+### Fase 0: Cimientos y Configuración
+
+-   [x] Configuración de servidor (Nginx, PHP 8.3, PostgreSQL 16)
+-   [x] Creación del proyecto Laravel 11 y Git
+-   [x] Conexión a la Base de Datos y configuración de Nginx
+
+### Fase 1: El Esqueleto Funcional
+
+-   [x] Sistema de autenticación (Registro, Login, Logout) con Laravel Breeze
+-   [x] Migraciones y modelo para perfil de usuario extendido (edad, peso, etc.)
+-   [ ] Lógica del motor de cálculo de macros
+-   [ ] Sistema de localización (i18n) para es/en
+
+### Fase 2: El Contenido y las Recetas
+
+-   [ ] Modelo y migración para `Food` e importación de USDA
+-   [ ] Buscador de alimentos
+-   [ ] CRUD de `Recipe` y su relación con `Food`
+
+### Fase 3: La Herramienta Estrella
+
+-   [ ] Interfaz del planificador semanal
+-   [ ] Lógica de frontend (Vue.js) para drag-and-drop
+-   [ ] Endpoints de API para el planificador
+
+### Fase 4: Seguimiento y Finalización
+
+-   [ ] Módulo de métricas y gráficos
+-   [ ] Módulo de subida segura de fotos
+-   [ ] Revisión de UI/UX y traducciones
+
+---
+
+## 🚀 Características Principales (Planificadas)
 
 ### 📊 Perfil Inteligente
 
-- Cálculo automático de necesidades calóricas (fórmula Mifflin-St Jeor)
-- Gestión de alergias/intolerancias alimentarias
-- Ajuste dinámico basado en métricas corporales
+-   Cálculo automático de necesidades calóricas (fórmula Mifflin-St Jeor)
+-   Gestión de alergias/intolerancias alimentarias
+-   Ajuste dinámico basado en métricas corporales
 
 ### 🍎 Base de Conocimiento
 
-- +8,000 alimentos de USDA FoodData Central
-- Búsqueda avanzada con filtros (sin gluten, vegano, etc.)
-- Detalles nutricionales por 100g
+-   +8,000 alimentos de USDA FoodData Central
+-   Búsqueda avanzada con filtros (sin gluten, vegano, etc.)
+-   Detalles nutricionales por 100g
 
 ### 👨‍🍳 Gestor de Recetas
 
-- Editor interactivo con cálculo automático de macros
-- Sistema de valoración y comentarios
-- Modo público/privado para compartir
+-   Editor interactivo con cálculo automático de macros
+-   Sistema de valoración y comentarios
+-   Modo público/privado para compartir
 
 ### 📅 Planificador Semanal
 
-- Interfaz drag-and-drop para comidas
-- Resumen diario de macros vs objetivos
-- Generación automática de listas de compra
+-   Interfaz drag-and-drop para comidas
+-   Resumen diario de macros vs objetivos
+-   Generación automática de listas de compra
 
 ### 📈 Seguimiento
 
-- Registro de métricas corporales con gráficos
-- Galería privada de fotos de progreso
-- Recordatorios personalizados
+-   Registro de métricas corporales con gráficos
+-   Galería privada de fotos de progreso
+-   Recordatorios personalizados
 
 ---
 
@@ -56,7 +97,7 @@ Convertirnos en la plataforma de referencia para la planificación nutricional p
 
 | Capa              | Tecnologías                                       |
 | ----------------- | ------------------------------------------------- |
-| **Backend**       | Laravel 10, PHP 8.3                               |
+| **Backend**       | Laravel 11, PHP 8.3                               |
 | **Frontend**      | Vue.js 3, Tailwind CSS, Chart.js                  |
 | **Base de Datos** | PostgreSQL 16 (Modelo relacional optimizado)      |
 | **Servidor**      | Nginx + PHP-FPM (Ubuntu 24.04 LTS en LXC/Proxmox) |
@@ -68,10 +109,10 @@ Convertirnos en la plataforma de referencia para la planificación nutricional p
 
 ### Requisitos previos
 
-- PHP 8.3+
-- PostgreSQL 16
-- Composer 2.5+
-- Node.js 18+
+-   PHP 8.3+
+-   PostgreSQL 16
+-   Composer
+-   Node.js 18+
 
 ### Pasos
 
@@ -86,47 +127,15 @@ npm install
 
 # Configurar entorno (copiar .env.example)
 cp .env.example .env
-nano .env  # Configurar DB y otras variables
+# Configurar DB y APP_URL en .env
+nano .env
+
+# Generar clave de aplicación
+php artisan key:generate
 
 # Migrar base de datos
-php artisan migrate --seed
+php artisan migrate
 
 # Compilar assets
 npm run build
-
-# Iniciar servidor de desarrollo
-php artisan serve
 ```
-
-## 📂 Estructura del Proyecto 
-
-ejemplo
-```plaintext
-nutrizone/
-├── app/                 # Lógica de backend
-│   ├── Models/          # User.php, Food.php, Recipe.php
-│   ├── Calculators/     # NutritionCalculator.php
-│   └── Http/            # Controllers, Middleware
-├── config/              # Configuraciones Laravel
-├── database/
-│   ├── migrations/      # Esquemas de base de datos
-│   └── seeders/         # Datos iniciales (USDA Foods)
-├── public/              # Assets compilados
-├── resources/
-│   ├── js/              # Componentes Vue
-│   │   └── Calculator/  # Componentes de cálculo
-│   ├── lang/            # Traducciones (es/en)
-│   └── views/           # Blade templates
-├── routes/
-│   ├── api.php          # Endpoints API
-│   └── web.php          # Rutas principales
-└── storage/
-    └── app/
-        └── progress_photos/  # Fotos de usuarios (privado)
-```
-
-**Key Paths:**
-
-- `app/Calculators/NutritionCalculator.php` - Lógica de fórmulas nutricionales
-- `database/seeders/FoodSeeder.php` - Importación de datos USDA
-- `resources/js/components/Planner.vue` - Planificador drag-and-drop
