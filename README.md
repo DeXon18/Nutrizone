@@ -4,7 +4,7 @@
 _Aplicación web para gestión de alimentación, cálculo de macros y seguimiento de progreso._
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)
+![Laravel](https://img.shields.io/badge/Laravel-12.x-red.svg)
 ![Vue.js](https://img.shields.io/badge/Vue.js-3.x-green.svg)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue.svg)
 
@@ -97,7 +97,7 @@ El proyecto ha completado su fase de cimentación (Fase 0) y las tareas fundamen
 
 | Capa              | Tecnologías                                       |
 | ----------------- | ------------------------------------------------- |
-| **Backend**       | Laravel 11, PHP 8.3                               |
+| **Backend**       | Laravel 12, PHP 8.3                               |
 | **Frontend**      | Vue.js 3, Tailwind CSS, Chart.js                  |
 | **Base de Datos** | PostgreSQL 16 (Modelo relacional optimizado)      |
 | **Servidor**      | Nginx + PHP-FPM (Ubuntu 24.04 LTS en LXC/Proxmox) |
