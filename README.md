@@ -29,7 +29,7 @@ El proyecto ha completado su fase de cimentación (Fase 0) y las tareas fundamen
 ### Fase 0: Cimientos y Configuración
 
 -   [x] Configuración de servidor (Nginx, PHP 8.3, PostgreSQL 16)
--   [x] Creación del proyecto Laravel 11 y Git
+-   [x] Creación del proyecto Laravel 12 y Git
 -   [x] Conexión a la Base de Datos y configuración de Nginx
 
 ### Fase 1: El Esqueleto Funcional
