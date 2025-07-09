@@ -36,8 +36,8 @@ El proyecto ha completado su fase de cimentación (Fase 0) y las tareas fundamen
 
 -   [x] Sistema de autenticación (Registro, Login, Logout) con Laravel Breeze
 -   [x] Migraciones y modelo para perfil de usuario extendido (edad, peso, etc.)
--   [ ] Lógica del motor de cálculo de macros
--   [ ] Sistema de localización (i18n) para es/en
+-   [x] Lógica del motor de cálculo de macros
+-   [x] Sistema de localización (i18n) para es/en
 
 ### Fase 2: El Contenido y las Recetas
 
