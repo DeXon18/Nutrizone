@@ -16,7 +16,7 @@ Convertirnos en la plataforma de referencia para la planificación nutricional p
 
 ---
 
-## состояние проекта (Estado del Proyecto)
+## Estado del Proyecto
 
 **Última actualización: 8 de Julio de 2024**
 
